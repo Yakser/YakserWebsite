@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* TODO блок контактов и поправить анимации*/
 
 body {
@@ -10,7 +17,9 @@ body {
 	border-radius: 10px;
 	font-family: 'Lato', sans-serif;
 	color: #fff;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -24,7 +33,8 @@ h1, h2, h3, h4, h5, h6, p {
 	
 	display: block;
 	width: 650px;
- 	align-self: flex-start;
+ 	-ms-flex-item-align: start;
+ 	    align-self: flex-start;
  	text-align: left;
  	margin: auto;
 
@@ -33,9 +43,16 @@ h1, h2, h3, h4, h5, h6, p {
 
 header {
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
-	justify-content: space-around;
-	align-items: flex-end;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
 	margin-top: 30px;
 
 }
@@ -45,9 +62,12 @@ header {
 
 	font-family: 'Krona One', sans-serif;
 	font-size: 36px;
-	animation-name: fade-in;
-	animation-duration: 1s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in;
+	        animation-name: fade-in;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 	margin-left: 40px;
 	
 }
@@ -60,9 +80,15 @@ main {
 	margin: 0;
 	padding: 0;
 	margin-top: 60px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	
 }
 aside {
@@ -79,7 +105,8 @@ aside {
 
 	height: 650px;
 	margin-right: 50px;
-	filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, .8));
+	-webkit-filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, .8));
+	        filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, .8));
 	
 }
 
@@ -88,7 +115,8 @@ aside {
 .intro {
 	
 	display: block;
- 	align-self: flex-start;
+ 	-ms-flex-item-align: start;
+ 	    align-self: flex-start;
  	text-align: left;
  	margin: auto;
 	
@@ -99,30 +127,39 @@ aside {
 	font-size: 24px;
 	opacity: 0.7;
 	margin-top: 30px;
-	animation-name: fade-in-vertical;
-	animation-duration: 1s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in-vertical;
+	        animation-name: fade-in-vertical;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 	text-align: left;
 }
 
 .portfolio .caption {
-	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
 }
 
 .header {
 	display: inline-block;
 	font-size: 52px;
-	animation-delay: .2s;
+	-webkit-animation-delay: .2s;
+	        animation-delay: .2s;
 	letter-spacing: 2pt;
 	font-family: 'Lato', sans-serif;
 	margin-left: 0;
 }
 .subheader {
 	font-size: 42px;
-	animation-name: fade-in;
-	animation-duration: 1s;
-	animation-fill-mode: both;
-	animation-delay: .3s;
+	-webkit-animation-name: fade-in;
+	        animation-name: fade-in;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
+	-webkit-animation-delay: .3s;
+	        animation-delay: .3s;
 	font-weight: 400;
 	text-align: left;
 	display: inline-block;
@@ -140,17 +177,35 @@ aside {
 }
 .rotate{
 	display: inline-block;
-	animation: rotate 1s both ease-out;
+	-webkit-animation: rotate 1s both ease-out;
+	        animation: rotate 1s both ease-out;
 	margin-left: 30px;	
+}
+
+@-webkit-keyframes rotate {
+	0% {
+		
+		-webkit-transform: scale(.5, .5);
+		
+		        transform: scale(.5, .5);
+	}
+	100% {
+			-webkit-transform: rotate(15deg) scale(1, 1);
+			        transform: rotate(15deg) scale(1, 1);
+			
+	}
 }
 
 @keyframes rotate {
 	0% {
 		
-		transform: scale(.5, .5);
+		-webkit-transform: scale(.5, .5);
+		
+		        transform: scale(.5, .5);
 	}
 	100% {
-			transform: rotate(15deg) scale(1, 1);
+			-webkit-transform: rotate(15deg) scale(1, 1);
+			        transform: rotate(15deg) scale(1, 1);
 			
 	}
 }
@@ -191,15 +246,19 @@ aside {
 
 .hovered {
 	border-bottom: .5px solid #fff;
-	animation-name: main-menu;
-	animation-duration: .5s;
+	-webkit-animation-name: main-menu;
+	        animation-name: main-menu;
+	-webkit-animation-duration: .5s;
+	        animation-duration: .5s;
 
 }
 
 .unhovered {
 	border-bottom: .5px solid transparent;
-	animation-name: main-menu-out;
-	animation-duration: .5s;
+	-webkit-animation-name: main-menu-out;
+	        animation-name: main-menu-out;
+	-webkit-animation-duration: .5s;
+	        animation-duration: .5s;
 
 }
 
@@ -211,30 +270,45 @@ aside {
 
 
 .main-menu li:nth-child(1){
-	animation-name: fade-in;
-	animation-duration: 1s;
-	animation-fill-mode: both;	
+	-webkit-animation-name: fade-in;
+	        animation-name: fade-in;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;	
 }
 
 .main-menu li:nth-child(2){
-	animation-name: fade-in;
-	animation-duration: 1s;
-	animation-delay: .1s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in;
+	        animation-name: fade-in;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-delay: .1s;
+	        animation-delay: .1s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 }
 
 .main-menu li:nth-child(3){
-	animation-name: fade-in;
-	animation-duration: 1s;
-	animation-delay: .3s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in;
+	        animation-name: fade-in;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-delay: .3s;
+	        animation-delay: .3s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 }
 
 .main-menu li:nth-child(4){
-	animation-name: fade-in;
-	animation-duration: 1s;
-	animation-delay: .5s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in;
+	        animation-name: fade-in;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-delay: .5s;
+	        animation-delay: .5s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 }
 
 
@@ -245,6 +319,9 @@ aside {
 	padding: 0;
 	margin-left: 50px;
 	height: 700px;
+	
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 	
 }
@@ -253,9 +330,12 @@ aside {
 
 .social li {
 	margin-bottom: 30px;
-	animation-name: fade-in-vertical;
-	animation-duration: 1s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in-vertical;
+	        animation-name: fade-in-vertical;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 	
 }
 
@@ -271,21 +351,30 @@ aside {
 
 .social li:first-child{
 	margin-top: 20px;
-	animation-delay: .1s;
+	-webkit-animation-delay: .1s;
+	        animation-delay: .1s;
 }
 
 .social li:nth-child(2){
-	animation-name: fade-in-vertical;
-	animation-duration: 1s;
-	animation-delay: .3s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in-vertical;
+	        animation-name: fade-in-vertical;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-delay: .3s;
+	        animation-delay: .3s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 }
 
 .social li:nth-child(3){
-	animation-name: fade-in-vertical;
-	animation-duration: 1s;
-	animation-delay: .5s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in-vertical;
+	        animation-name: fade-in-vertical;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-delay: .5s;
+	        animation-delay: .5s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 }
 
 .social li a:hover {
@@ -301,9 +390,12 @@ aside {
 	height: 250px;
 	margin-left: 10px;
 	width: 0;
-	animation-name: fade-in-width;
-	animation-duration: 1s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in-width;
+	        animation-name: fade-in-width;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 
 	/*animation-fill-mode: both;*/
 }
@@ -314,24 +406,46 @@ aside {
 	height: 250px;
 	width: 0;
 	margin-left: 10px;
-	animation-name: fade-in-width;
-	animation-delay: .5s;
-	animation-duration: 1s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in-width;
+	        animation-name: fade-in-width;
+	-webkit-animation-delay: .5s;
+	        animation-delay: .5s;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 
 }
 
 
 .hidden {
-	animation: hidden 1s both;
-	animation-timing-function: ease;
+	-webkit-animation: hidden 1s both;
+	        animation: hidden 1s both;
+	-webkit-animation-timing-function: ease;
+	        animation-timing-function: ease;
 	
 }
 
 .unhidden {
-	animation: hidden 1s both;
-	animation-timing-function: ease;
+	-webkit-animation: hidden 1s both;
+	        animation: hidden 1s both;
+	-webkit-animation-timing-function: ease;
+	        animation-timing-function: ease;
 	
+}
+@-webkit-keyframes hidden{
+	
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+		
+		
+	}
+	
+
 }
 @keyframes hidden{
 	
@@ -354,12 +468,32 @@ aside {
 
 }
 
+@-webkit-keyframes main-menu{
+	0% {
+		border-bottom:1px solid transparent;
+	}
+	100% {
+		border-bottom:1px solid #fff;
+	}
+
+}
+
 @keyframes main-menu{
 	0% {
 		border-bottom:1px solid transparent;
 	}
 	100% {
 		border-bottom:1px solid #fff;
+	}
+
+}
+@-webkit-keyframes main-menu-out{
+	
+	0% {
+		border-bottom:1px solid #fff;
+	}
+	100% {
+		border-bottom:1px solid transparent;
 	}
 
 }
@@ -375,15 +509,49 @@ aside {
 }
 
 
-@keyframes fade-in {
+@-webkit-keyframes fade-in {
 
 	0% {
-		transform: translate(-50px, 0px);
+		-webkit-transform: translate(-50px, 0px);
+		        transform: translate(-50px, 0px);
 		opacity: 0;
 	}
 
 	100% {
-		transform: translate(0px, 0px);
+		-webkit-transform: translate(0px, 0px);
+		        transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+
+
+@keyframes fade-in {
+
+	0% {
+		-webkit-transform: translate(-50px, 0px);
+		        transform: translate(-50px, 0px);
+		opacity: 0;
+	}
+
+	100% {
+		-webkit-transform: translate(0px, 0px);
+		        transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+
+
+
+@-webkit-keyframes fade-in-vertical {
+
+	0% {
+		-webkit-transform: translate(0px, -50px);
+		        transform: translate(0px, -50px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translate(0px, 0px);
+		        transform: translate(0px, 0px);
 		opacity: 1;
 	}
 }
@@ -393,11 +561,26 @@ aside {
 @keyframes fade-in-vertical {
 
 	0% {
-		transform: translate(0px, -50px);
+		-webkit-transform: translate(0px, -50px);
+		        transform: translate(0px, -50px);
 		opacity: 0;
 	}
 	100% {
-		transform: translate(0px, 0px);
+		-webkit-transform: translate(0px, 0px);
+		        transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+
+
+@-webkit-keyframes fade-in-width {
+
+	0% {
+		height: 0;
+		opacity: 0;
+	}
+	100% {
+		height: 250px;
 		opacity: 1;
 	}
 }
@@ -419,29 +602,40 @@ aside {
 .about {
 
 	display: none;
-	animation-name: fade-in;
-	animation-duration: 1s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in;
+	        animation-name: fade-in;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 
 
 }
 .portfolio {
 
 	display: none;
-	animation-name: fade-in;
-	animation-duration: 1s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in;
+	        animation-name: fade-in;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 
 }
 .contact {
 
 	display: none;
-	animation-name: fade-in;
-	animation-duration: 1s;
-	animation-delay: .15s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in;
+	        animation-name: fade-in;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-delay: .15s;
+	        animation-delay: .15s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 	text-align: center;
-	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
 
 }
 
@@ -462,10 +656,14 @@ aside {
 	margin-top: 15px;
 	list-style: none;
 	position: relative;
-	animation-name: fade-in;
-	animation-duration: 1s;
-	animation-fill-mode: both;
-	animation-delay: .1s;
+	-webkit-animation-name: fade-in;
+	        animation-name: fade-in;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
+	-webkit-animation-delay: .1s;
+	        animation-delay: .1s;
 }
 
 .works-list li:first-child a::before{
@@ -540,9 +738,12 @@ aside {
 
 
 .hor-social li {
-	animation-name: fade-in-vertical;
-	animation-duration: 1s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in-vertical;
+	        animation-name: fade-in-vertical;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 	display: inline-block;
 	margin: 0 15px;
 	margin-top: 30px;
@@ -558,21 +759,30 @@ aside {
 
 .hor-social li:first-child{
 	margin-right: 15;
-	animation-delay: .1s;
+	-webkit-animation-delay: .1s;
+	        animation-delay: .1s;
 }
 
 .hor-social li:nth-child(2){
-	animation-name: fade-in-vertical;
-	animation-duration: 1s;
-	animation-delay: .3s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in-vertical;
+	        animation-name: fade-in-vertical;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-delay: .3s;
+	        animation-delay: .3s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 }
 
 .hor-social li:nth-child(3){
-	animation-name: fade-in-vertical;
-	animation-duration: 1s;
-	animation-delay: .5s;
-	animation-fill-mode: both;
+	-webkit-animation-name: fade-in-vertical;
+	        animation-name: fade-in-vertical;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-delay: .5s;
+	        animation-delay: .5s;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
 }
 
 .hor-social li a:hover {
