@@ -3,11 +3,10 @@ let blocksList = document.querySelectorAll('.block');
 let social = document.querySelector('.social');
 let contact = document.querySelector('.contact');
 
-let ind = 0;
+let body = document.querySelector('body');
+body.style.backgroundSize = 2 * screen.width + "px" + " " + 2 * screen.width + "px";
 
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
+let ind = 0;
 
 for(let i = 0; i < itemsList.length; i++){
 
