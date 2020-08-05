@@ -849,11 +849,18 @@ aside {
 		margin-left: 60px;
 	}
 
+
 	.contact {
 		margin-left: -100px;
-		
-
+	
 	}
+	.social::before {
+		border: 1px solid #fff;
+	}
+	.social::after {
+		border: 1px solid #fff;
+	}
+
 	.hor-social::before {
 		display: none;
 	}
