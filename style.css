@@ -829,17 +829,16 @@ aside {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) { 
 	body {
 
 		padding: 0 20px;
-		
-
+		background: #52a8ff;
 	}
+	
 	main {
 		
 	}
-
 
 	aside {
 		margin-right: 40px;
