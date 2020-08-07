@@ -16,6 +16,10 @@ body {
 	background-image: url(files/gradient-bg.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
+	-moz-background-size: 100%; 
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
 	font-family: 'Lato', sans-serif;
 	color: #fff;
 	-webkit-box-sizing: border-box;
