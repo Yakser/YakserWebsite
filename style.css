@@ -850,6 +850,7 @@ aside {
 
 	.logo {
 		margin-left: 60px;
+		align-self: flex-start;
 	}
 
 
