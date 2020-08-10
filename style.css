@@ -7,6 +7,7 @@
 
 /* TODO блок контактов и поправить анимации*/
 
+@media (prefers-color-scheme) {
 
 
 body {
@@ -931,5 +932,7 @@ aside {
 		margin: 5px 15px;
 
 	}
+
+}
 
 }
