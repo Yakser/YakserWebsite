@@ -849,8 +849,6 @@ aside {
 		margin-left: 60px;
 		align-self: flex-start;
 	
-
-
 	}
 
 	.contact {
@@ -880,6 +878,9 @@ aside {
 
 	}
 
+	#bar ul li {
+		animation: none;
+	}
 
 	#bar {
 		position: fixed;
