@@ -3,10 +3,15 @@ let blocksList = document.querySelectorAll('.block');
 let social = document.querySelector('.social');
 let contact = document.querySelector('.contact');
 
-let body = document.querySelector('body');
-body.style.backgroundSize = 2 * screen.width + "px" + " " + 2 * screen.width + "px";
-
 let ind = 0;
+
+
+function openMenu() {
+
+	document.getElementById("bar").classList.toggle('active-bar');
+}
+
+
 
 for(let i = 0; i < itemsList.length; i++){
 
@@ -46,34 +51,3 @@ for(let i = 0; i < itemsList.length; i++){
 			}
 		});
 }
-
-
-
-
-
-
-
-
-// function photoRotate() {
-//    const angle = 10;
-//    const card = document.querySelector(".photo");
-//    card.addEventListener('mouseout', e => {
-// 	  // card.style.transform = `perspective(400px) rotateX(0deg) rotateY(0deg)`;
-// 	  const w = card.clientWidth;
-//       const h = card.clientHeight;
-//       const y = (e.offsetX - w * 0.5) / w * angle;
-//       const x = (1 - (e.offsetY - h * 0.5)) / h * angle;
-//       card.style.transform = `perspective(400px) rotateX(${x}deg) rotateY(${y}deg)`;
-//    });
- 
-//    card.addEventListener('mousemove', e => {
-//       const w = card.clientWidth;
-//       const h = card.clientHeight;
-//       const y = (e.offsetX - w * 0.5) / w * angle;
-//       const x = (1 - (e.offsetY - h * 0.5)) / h * angle;
-//       card.style.transform = `perspective(400px) rotateX(${x}deg) rotateY(${y}deg)`;
-//   });
-// }
- 
-// photoRotate();
-
