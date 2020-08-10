@@ -244,12 +244,9 @@ aside {
 }
 
 /*.main-menu li a:hover {
-
 	border-bottom: .5px solid #fff;
 	animation-name: main-menu;
 	animation-duration: 1s;
-
-
 }*/
 
 
@@ -851,8 +848,10 @@ aside {
 	.logo {
 		margin-left: 60px;
 		align-self: flex-start;
-	}
+	
 
+
+	}
 
 	.contact {
 		margin-left: -100px;
@@ -870,6 +869,66 @@ aside {
 	}
 	.hor-social::after {
 		display: none;
+	}
+	#bar *{
+		padding: 0;
+		margin: 0;
+	}
+
+	header {
+		display: block;
+
+	}
+
+
+	#bar {
+		position: fixed;
+		
+		/*right: 30px;*/
+		right: -120px;
+		top: 0;
+		border-left: 1px solid #fff;
+		margin-top: 50px;
+		-webkit-transition: all 300ms;
+		-o-transition: all 300ms;
+		transition: all 300ms;
+	}
+
+	#bar.active-bar {
+		right: 30px;
+	}
+
+
+	#bar ul li {
+		text-align: left;
+		display: block;
+		margin-right: 0;
+		margin-left: 20px;
+	
+	}
+
+
+
+
+	#bar .toggle-btn {
+		position: absolute;
+		right: 125px;
+		top: 0px;
+		
+		
+		border-radius: 12px;
+		border: 1px solid #fff;
+		cursor: pointer;
+		
+	}
+
+	#bar .toggle-btn span {
+		display: block;
+		width: 25px;
+		height: 1px;
+		background: #fff;
+		margin: 5px 15px;
+
 	}
 
 }
