@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-
+/* TODO блок контактов и поправить анимации*/
 
 
 
@@ -24,7 +24,7 @@ body {
 	color: #fff;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-
+	
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6, p {
  	    align-self: flex-start;
  	text-align: left;
  	margin: auto;
+
 
 	
 }
@@ -616,9 +617,16 @@ aside {
 	        animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
 	        animation-fill-mode: both;
-
-
 }
+
+
+.contact {
+
+	margin: auto;
+	margin-left: -407.5px;
+	height: 500px;
+}
+
 .portfolio {
 
 	display: none;
@@ -766,7 +774,7 @@ aside {
 }
 
 .hor-social li:first-child{
-	margin-right: 15;
+	margin-right: 15px;
 	-webkit-animation-delay: .1s;
 	        animation-delay: .1s;
 }
@@ -813,6 +821,7 @@ aside {
 
 	/*animation-fill-mode: both;*/
 }
+
 .hor-social::after {
 	content: "";
 	display: inline-block;
@@ -851,10 +860,7 @@ aside {
 	
 	}
 
-	.contact {
-		margin-left: -100px;
 	
-	}
 	.social::before {
 		border: 1px solid #fff;
 	}
@@ -932,5 +938,10 @@ aside {
 
 	}
 
-}
+	.contact {
+		height: auto;
+		margin: auto;
+		margin-top: 250px;
+	}
 
+}
