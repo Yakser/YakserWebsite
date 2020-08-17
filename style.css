@@ -917,4 +917,49 @@ aside {
 		margin-top: 250px;
 	}
 
+
+
+
+}
+
+@media (max-width: 480px) { 
+
+
+	.logo {
+		font-size: 28px;
+		margin: 0;
+		padding: 0;
+	}	
+	.social{
+		margin: 0;
+		padding: 0;
+	}
+
+	.subheader-python {
+		display: none;
+	}
+
+
+	.web::after {
+		content: "& Python";
+		position: relative;
+		top: 30px;
+		left: -20px;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 30px;
+		transform: rotate(15deg);
+		color: #b6e9ff;
+		font-size: 24px;
+		opacity: 0.7;
+
+	}
+
+	#bar.active-bar {
+
+		right: 0;
+
+	}
+	
 }
