@@ -782,19 +782,6 @@ aside {
 	margin-bottom: 300px;
 }
 
-#bar .toggle-btn.active-btn span:first-child {
-		width: 10px;
-		-webkit-transform: translate(12px, 5px) rotate(45deg) ;
-		    -ms-transform: translate(12px, 5px) rotate(45deg) ;
-		        transform: translate(12px, 5px) rotate(45deg) ;
-	}
-	#bar .toggle-btn.active-btn span:last-child {
-		width: 10px;
-		-webkit-transform: translate(12px, -5px) rotate(-45deg) ;
-		    -ms-transform: translate(12px, -5px) rotate(-45deg) ;
-		        transform: translate(12px, -5px) rotate(-45deg) ;
-		
-	}
 
 @media (max-width: 767px) { 
 	body {
@@ -906,10 +893,6 @@ aside {
 				transition: all .3s ease-in-out;
 	}
 
-	.toggle-btn.active-btn {
-		background: rgba(255, 255, 255, .5);
-	}
-
 	#bar .toggle-btn.active-btn span:first-child {
 		width: 10px;
 		-webkit-transform: translate(12px, 5px) rotate(45deg) ;
@@ -925,12 +908,10 @@ aside {
 	}
 
 	.contact {
+		
 		margin: auto;
 		margin-top: 250px;
 	}
-
-
-
 
 }
 
@@ -992,19 +973,5 @@ aside {
 
 		right: 100px;
 	}	
-
-	#bar .toggle-btn.active-btn span:first-child {
-		width: 10px;
-		-webkit-transform: translate(12px, 5px) rotate(45deg) ;
-		    -ms-transform: translate(12px, 5px) rotate(45deg) ;
-		        transform: translate(12px, 5px) rotate(45deg) ;
-	}
-	#bar .toggle-btn.active-btn span:last-child {
-		width: 10px;
-		-webkit-transform: translate(12px, -5px) rotate(-45deg) ;
-		    -ms-transform: translate(12px, -5px) rotate(-45deg) ;
-		        transform: translate(12px, -5px) rotate(-45deg) ;
-		
-	}
 
 }
