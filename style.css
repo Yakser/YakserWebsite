@@ -506,7 +506,33 @@ aside {
 	}
 }
 
+@-moz-keyframes fade-in-vertical {
 
+	0% {
+		-webkit-transform: translate(0px, -50px);
+		        transform: translate(0px, -50px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translate(0px, 0px);
+		        transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fade-in-vertical {
+
+	0% {
+		-webkit-transform: translate(0px, -50px);
+		        transform: translate(0px, -50px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translate(0px, 0px);
+		        transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
 
 @keyframes fade-in-vertical {
 
@@ -822,7 +848,10 @@ aside {
 			-o-transition: all .3s ease-in-out;
 				transition: all .3s ease-in-out;
 
-		border-radius: 50%;
+		-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+	  			-o-border-radius: 50%;
+	  				border-radius: 50%;
 		border: 1px solid #fff;
 		cursor: pointer;
 		-webkit-animation-name: fade-in;
@@ -840,7 +869,11 @@ aside {
 		background: #fff;
 		margin: 6px 0;
 		margin-left: 5px;
-		border-radius: 5px;
+		
+		-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+	  			-o-border-radius: 5px;
+	  				border-radius: 5px;
 
 		-webkit-transition: all .3s ease-in-out;
 			-o-transition: all .3s ease-in-out;
