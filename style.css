@@ -955,11 +955,30 @@ aside {
 		opacity: 0.7;
 
 	}
+	#bar {
+
+		top: 50px;
+	}
+
 
 	#bar.active-bar {
 
-		right: 0;
-
+		right: 5px;
+		
 	}
-	
+
+	#bar .main-menu li a{
+
+		font-size: 18px;
+	}
+
+	#bar .main-menu li {
+
+		margin-left: 10px;
+	}
+	#bar .toggle-btn.active-btn {
+
+		right: 100px;
+	}	
+
 }
