@@ -1,14 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-/* TODO блок контактов и поправить анимации*/
-
-
-
 body {
 	margin: 0;
 	padding: 0;
@@ -34,17 +23,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 .block {
-
-	
 	display: block;
 	width: 650px;
  	-ms-flex-item-align: start;
  	    align-self: flex-start;
  	text-align: left;
  	margin: auto;
-
-
-	
 }
 
 header {
@@ -80,8 +64,6 @@ header {
 
 }
 
-
-
 main {
 
 	margin: 0;
@@ -104,22 +86,7 @@ aside {
 	margin: auto ;
 	width: 70px;
 	display: block;
-	/*margin-right: 40px;*/
-	
 }
-
-
-
-.photo {
-
-	height: 650px;
-	margin-right: 50px;
-	-webkit-filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, .8));
-	        filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, .8));
-	
-}
-
-
 
 .intro {
 	
@@ -244,13 +211,6 @@ aside {
 	
 }
 
-/*.main-menu li a:hover {
-	border-bottom: .5px solid #fff;
-	animation-name: main-menu;
-	animation-duration: 1s;
-}*/
-
-
 .hovered {
 	border-bottom: .5px solid #fff;
 	-webkit-animation-name: main-menu;
@@ -330,10 +290,7 @@ aside {
 	-webkit-transition: .3s;
 	-o-transition: .3s;
 	transition: .3s;
-	
 }
-
-
 
 .social li {
 	margin-bottom: 30px;
@@ -342,10 +299,8 @@ aside {
 	-webkit-animation-duration: 1s;
 	        animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
-	        animation-fill-mode: both;
-	
+	        animation-fill-mode: both;	
 }
-
 
 .social img {
 	height: 20px;
@@ -388,8 +343,6 @@ aside {
 	opacity: .7;
 
 }
-
-
 .social:before {
 	content: "";
 	display: block;
@@ -404,8 +357,6 @@ aside {
 	        animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
 	        animation-fill-mode: both;
-
-	/*animation-fill-mode: both;*/
 }
 .social:after {
 	content: "";
@@ -426,13 +377,11 @@ aside {
 
 }
 
-
 .hidden {
 	-webkit-animation: hidden 1s both;
 	        animation: hidden 1s both;
 	-webkit-animation-timing-function: ease;
 	        animation-timing-function: ease;
-	
 }
 
 .unhidden {
@@ -450,8 +399,6 @@ aside {
 
 	100% {
 		opacity: 1;
-		
-		
 	}
 	
 
@@ -463,12 +410,9 @@ aside {
 	}
 
 	100% {
-		opacity: 1;
-		
-		
+		opacity: 1;	
 	}
 	
-
 }
 
 .active {
@@ -533,7 +477,6 @@ aside {
 	}
 }
 
-
 @keyframes fade-in {
 
 	0% {
@@ -548,8 +491,6 @@ aside {
 		opacity: 1;
 	}
 }
-
-
 
 @-webkit-keyframes fade-in-vertical {
 
@@ -581,7 +522,6 @@ aside {
 	}
 }
 
-
 @-webkit-keyframes fade-in-width {
 
 	0% {
@@ -609,7 +549,6 @@ aside {
 
 
 .about {
-
 	display: none;
 	-webkit-animation-name: fade-in;
 	        animation-name: fade-in;
@@ -619,12 +558,9 @@ aside {
 	        animation-fill-mode: both;
 }
 
-
 .contact {
-
 	margin: auto;
 	margin-left: -407.5px;
-	
 }
 
 .portfolio {
@@ -636,10 +572,8 @@ aside {
 	        animation-duration: 1s;
 	-webkit-animation-fill-mode: both;
 	        animation-fill-mode: both;
-
 }
 .contact {
-
 	display: none;
 	-webkit-animation-name: fade-in;
 	        animation-name: fade-in;
@@ -654,20 +588,12 @@ aside {
 	        animation-timing-function: ease-in-out;
 
 }
-
-
 .works-list {
-
 	margin: 0;
-
 	padding: 0;
-
 }
 
-
 .works-list li {
-
-	
 	margin-left: 60px;
 	margin-top: 15px;
 	list-style: none;
@@ -694,8 +620,6 @@ aside {
 	position: absolute;
 	top: 8px;
 	left: -32px;
-
-
 }
 
 .courses-list li:first-child a::before{
@@ -710,8 +634,6 @@ aside {
 	position: absolute;
 	top: 8px;
 	left: -32px;
-
-
 }
 .courses-list li:nth-child(2) a::before{
 	content: "";
@@ -725,8 +647,6 @@ aside {
 	position: absolute;
 	top: 8px;
 	left: -32px;
-
-
 }
 
 .works-list li a{
@@ -750,8 +670,6 @@ aside {
 	padding: 0;
 	margin-bottom: 280px;
 }
-
-
 
 .hor-social li {
 	-webkit-animation-name: fade-in-vertical;
@@ -805,7 +723,6 @@ aside {
 	opacity: .7;
 }
 
-
 .hor-social::before {
 	content: "";
 	display: inline-block;
@@ -814,12 +731,6 @@ aside {
 	height: 0;
 	width: 30%;
 	margin-bottom: 300px;
-	
-	/*animation-name: fade-in-width;
-	animation-duration: 1s;
-	animation-fill-mode: both;*/
-
-	/*animation-fill-mode: both;*/
 }
 
 .hor-social::after {
@@ -830,26 +741,15 @@ aside {
 	width: 30%;
 	height: 0;
 	margin-bottom: 300px;
-
-	/*animation-name: fade-in-width;
-	animation-delay: .5s;
-	animation-duration: 1s;
-	animation-fill-mode: both;*/
-
 }
 
 
 @media (max-width: 767px) { 
 	body {
-
 		padding: 0 20px;
 		background: #52a8ff;
 	}
 	
-	main {
-		
-	}
-
 	aside {
 		margin-right: 40px;
 	}
@@ -858,16 +758,13 @@ aside {
 		margin-left: 60px;
 		-ms-flex-item-align: start;
 		    align-self: flex-start;
-	
 	}
-
 	.social::before {
 		border: 1px solid #fff;
 	}
 	.social::after {
 		border: 1px solid #fff;
 	}
-	
 	.hor-social::before {
 		display: none;
 	}
@@ -882,7 +779,6 @@ aside {
 
 	header {
 		display: block;
-
 	}
 
 	#bar ul li {
@@ -892,22 +788,18 @@ aside {
 
 	#bar {
 		position: fixed;
-		
-		/*right: 30px;*/
 		right: -120px;
 		top: 0;
 		border-left: 1px solid #fff;
 		margin-top: 50px;
 		-webkit-transition: all 300ms;
-		-o-transition: all 300ms;
-		transition: all 300ms;
+			-o-transition: all 300ms;
+				transition: all 300ms;
 	}
 
 	#bar.active-bar {
 		right: 30px;
 	}
-
-
 
 	#bar ul li {
 		text-align: left;
@@ -917,75 +809,60 @@ aside {
 	
 	}
 
-
-
+	
 
 	#bar .toggle-btn {
 		position: absolute;
+		width: 30px;
+		height: 30px;
 		right: 125px;
 		top: 0px;
 
 		-webkit-transition: all .3s ease-in-out;
+			-o-transition: all .3s ease-in-out;
+				transition: all .3s ease-in-out;
 
-		-o-transition: all .3s ease-in-out;
-
-		transition: all .3s ease-in-out;
 		border-radius: 50%;
 		border: 1px solid #fff;
 		cursor: pointer;
-		width: 30px;
-		height: 30px;
-		
-		
+		-webkit-animation-name: fade-in;
+			        animation-name: fade-in;
+			-webkit-animation-duration: 1s;
+			        animation-duration: 1s;
+			
 	}
 
 	#bar .toggle-btn span {
 		display: block;
 		width: 20px;
 		height: 2px;
-		/*border-radius: 5px;*/
+
 		background: #fff;
-		/*margin: 5px 15px;*/
 		margin: 6px 0;
 		margin-left: 5px;
-
+		border-radius: 5px;
 
 		-webkit-transition: all .3s ease-in-out;
-
-
-		-o-transition: all .3s ease-in-out;
-
-
-		transition: all .3s ease-in-out;
+			-o-transition: all .3s ease-in-out;
+				transition: all .3s ease-in-out;
 	}
 
 	.toggle-btn.active-btn {
-
 		background: rgba(255, 255, 255, .5);
-
-		/*height:  115px;
-		width: 2px;
-		left: -5px;*/
-		
-
-		
 	}
 
 	#bar .toggle-btn.active-btn span:first-child {
+		width: 10px;
 		-webkit-transform: translate(12px, 5px) rotate(45deg) ;
 		    -ms-transform: translate(12px, 5px) rotate(45deg) ;
 		        transform: translate(12px, 5px) rotate(45deg) ;
-		width: 10px;
-	
-		
 	}
 	#bar .toggle-btn.active-btn span:last-child {
+		width: 10px;
 		-webkit-transform: translate(12px, -5px) rotate(-45deg) ;
 		    -ms-transform: translate(12px, -5px) rotate(-45deg) ;
 		        transform: translate(12px, -5px) rotate(-45deg) ;
-
-		width: 10px;
-	
+		
 	}
 
 	.contact {
