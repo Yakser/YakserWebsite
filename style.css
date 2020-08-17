@@ -856,7 +856,8 @@ aside {
 
 	.logo {
 		margin-left: 60px;
-		align-self: flex-start;
+		-ms-flex-item-align: start;
+		    align-self: flex-start;
 	
 	}
 
@@ -885,7 +886,8 @@ aside {
 	}
 
 	#bar ul li {
-		animation: none;
+		-webkit-animation: none;
+		        animation: none;
 	}
 
 	#bar {
@@ -923,6 +925,10 @@ aside {
 		right: 125px;
 		top: 0px;
 
+		-webkit-transition: all .3s ease-in-out;
+
+		-o-transition: all .3s ease-in-out;
+
 		transition: all .3s ease-in-out;
 		border-radius: 50%;
 		border: 1px solid #fff;
@@ -944,6 +950,12 @@ aside {
 		margin-left: 5px;
 
 
+		-webkit-transition: all .3s ease-in-out;
+
+
+		-o-transition: all .3s ease-in-out;
+
+
 		transition: all .3s ease-in-out;
 	}
 
@@ -960,13 +972,17 @@ aside {
 	}
 
 	#bar .toggle-btn.active-btn span:first-child {
-		transform: translate(12px, 5px) rotate(45deg) ;
+		-webkit-transform: translate(12px, 5px) rotate(45deg) ;
+		    -ms-transform: translate(12px, 5px) rotate(45deg) ;
+		        transform: translate(12px, 5px) rotate(45deg) ;
 		width: 10px;
 	
 		
 	}
 	#bar .toggle-btn.active-btn span:last-child {
-		transform: translate(12px, -5px) rotate(-45deg) ;
+		-webkit-transform: translate(12px, -5px) rotate(-45deg) ;
+		    -ms-transform: translate(12px, -5px) rotate(-45deg) ;
+		        transform: translate(12px, -5px) rotate(-45deg) ;
 
 		width: 10px;
 	
