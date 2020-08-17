@@ -647,6 +647,19 @@ aside {
 	top: 8px;
 	left: -32px;
 }
+.works-list li:nth-child(2) a::before{
+	content: "";
+	display: inline-block;
+	background-image: url(img/google-code-in-logo.png);
+	background-size: 16px;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 16px;
+	position: absolute;
+	top: 8px;
+	left: -32px;
+}
 
 .courses-list li:first-child a::before{
 	content: "";
