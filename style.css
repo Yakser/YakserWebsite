@@ -624,7 +624,7 @@ aside {
 
 	margin: auto;
 	margin-left: -407.5px;
-	height: 500px;
+	
 }
 
 .portfolio {
@@ -748,7 +748,7 @@ aside {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	
+	margin-bottom: 280px;
 }
 
 
@@ -813,7 +813,7 @@ aside {
 	background-color: #fff;
 	height: 0;
 	width: 30%;
-	margin-bottom: 20px;
+	margin-bottom: 300px;
 	
 	/*animation-name: fade-in-width;
 	animation-duration: 1s;
@@ -829,7 +829,7 @@ aside {
 	background-color: #fff;
 	width: 30%;
 	height: 0;
-	margin-bottom: 20px;
+	margin-bottom: 300px;
 
 	/*animation-name: fade-in-width;
 	animation-delay: .5s;
@@ -860,20 +860,20 @@ aside {
 	
 	}
 
-	
 	.social::before {
 		border: 1px solid #fff;
 	}
 	.social::after {
 		border: 1px solid #fff;
 	}
-
+	
 	.hor-social::before {
 		display: none;
 	}
 	.hor-social::after {
 		display: none;
 	}
+	
 	#bar *{
 		padding: 0;
 		margin: 0;
@@ -906,6 +906,7 @@ aside {
 	}
 
 
+
 	#bar ul li {
 		text-align: left;
 		display: block;
@@ -921,21 +922,54 @@ aside {
 		position: absolute;
 		right: 125px;
 		top: 0px;
-		
-		
-		border-radius: 12px;
+
+		transition: all .3s ease-in-out;
+		border-radius: 50%;
 		border: 1px solid #fff;
 		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		
 		
 	}
 
 	#bar .toggle-btn span {
 		display: block;
-		width: 25px;
-		height: 1px;
+		width: 20px;
+		height: 2px;
+		/*border-radius: 5px;*/
 		background: #fff;
-		margin: 5px 15px;
+		/*margin: 5px 15px;*/
+		margin: 6px 0;
+		margin-left: 5px;
 
+
+		transition: all .3s ease-in-out;
+	}
+
+	.toggle-btn.active-btn {
+
+		background: rgba(255, 255, 255, .5);
+
+		/*height:  115px;
+		width: 2px;
+		left: -5px;*/
+		
+
+		
+	}
+
+	#bar .toggle-btn.active-btn span:first-child {
+		transform: translate(12px, 5px) rotate(45deg) ;
+		width: 10px;
+	
+		
+	}
+	#bar .toggle-btn.active-btn span:last-child {
+		transform: translate(12px, -5px) rotate(-45deg) ;
+
+		width: 10px;
+	
 	}
 
 	.contact {
