@@ -5,13 +5,11 @@ let contact = document.querySelector('.contact');
 
 let ind = 0;
 
-
 function openMenu() {
 
 	document.getElementById("bar").classList.toggle('active-bar');
+
 }
-
-
 
 for(let i = 0; i < itemsList.length; i++){
 

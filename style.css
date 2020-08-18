@@ -813,7 +813,11 @@ aside {
     -webkit-animation-name: fade-in;
     	animation-name: fade-in;
     -webkit-animation-duration: 1s;
-    	animation-duration: 1s;
+      animation-duration: 1s;
+      
+    -webkit-transition: all 0.3s ease-in-out;
+    	-o-transition: all 0.3s ease-in-out;
+    		transition: all 0.3s ease-in-out;
   }
 
 
@@ -875,12 +879,12 @@ aside {
     		transition: all 0.3s ease-in-out;
   }
 
-  .active-bar .hamburger:before {
+  #bar.active-bar .hamburger::before {
     -webkit-transform: translate(8px, 5px) rotate(45deg) scale(0.5, 1);
     	-ms-transform: translate(8px, 5px) rotate(45deg) scale(0.5, 1);
     		transform: translate(8px, 5px) rotate(45deg) scale(0.5, 1);
   }
-  .active-bar .hamburger:after {
+  #bar.active-bar .hamburger::after {
     -webkit-transform: translate(8px, -5px) rotate(-45deg) scale(0.5, 1);
     	-ms-transform: translate(8px, -5px) rotate(-45deg) scale(0.5, 1);
     		transform: translate(8px, -5px) rotate(-45deg) scale(0.5, 1);
