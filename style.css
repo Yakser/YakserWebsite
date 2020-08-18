@@ -816,13 +816,16 @@ aside {
     	animation-duration: 1s;
   }
 
-  #bar .toggle-btn div {
-   
+
+  #bar .toggle-btn .hamburger{
+    position: relative;
     width: 20px;
     height: 2px;
     background: #fff;
-    margin: 6px 0;
+   
     margin-left: 5px;
+    margin-top: 14px;
+
 
     -webkit-border-radius: 5px;
     	-moz-border-radius: 5px;
@@ -834,12 +837,50 @@ aside {
     		transition: all 0.3s ease-in-out;
   }
 
-  .active-btn div:first-child {
+  #bar .toggle-btn .hamburger::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    top: -8px;
+   
+
+    -webkit-border-radius: 5px;
+    	-moz-border-radius: 5px;
+    		-o-border-radius: 5px;
+    			border-radius: 5px;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    	-o-transition: all 0.3s ease-in-out;
+    		transition: all 0.3s ease-in-out;
+  }
+  #bar .toggle-btn .hamburger::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    top: 8px;
+
+    -webkit-border-radius: 5px;
+    	-moz-border-radius: 5px;
+    		-o-border-radius: 5px;
+    			border-radius: 5px;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    	-o-transition: all 0.3s ease-in-out;
+    		transition: all 0.3s ease-in-out;
+  }
+
+  #bar.active-bar .hamburger::before {
     -webkit-transform: translate(8px, 5px) rotate(45deg) scale(0.5, 1);
     	-ms-transform: translate(8px, 5px) rotate(45deg) scale(0.5, 1);
     		transform: translate(8px, 5px) rotate(45deg) scale(0.5, 1);
   }
-  .active-btn div:last-child {
+  #bar.active-bar .hamburger::after {
     -webkit-transform: translate(8px, -5px) rotate(-45deg) scale(0.5, 1);
     	-ms-transform: translate(8px, -5px) rotate(-45deg) scale(0.5, 1);
     		transform: translate(8px, -5px) rotate(-45deg) scale(0.5, 1);
