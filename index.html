@@ -1,101 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta name="description" content="This is my little portfolio website. Thee you can find out
-										 basic information about me and check out my works.">
-	<meta name="keywords" content="Yakser, yakser, y4ks3r, Sergey Yaksanov,
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="This is my little portfolio website. There you can find out
+										 basic information about me and check out my works."
+    />
+    <meta
+      name="keywords"
+      content="Yakser, yakser, y4ks3r, Sergey Yaksanov,
 	 								Яксанов Сергей, portfolio, portfolio web,
 	 								Яксанов, Яксер, 
-	 								portfolio site, portfolio website, junior developer">
-	<link rel="stylesheet" href="style.css" type="text/css">
-	<link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Lato:wght@300;400&display=swap" rel="stylesheet">
-	<link rel="icon" href="files/favicon.png" type="image/png">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-	<title>Yaksers' website</title>
-</head>
-<body>
-	<div class="wrapper">
-		<header>
-			<div class="logo">
-				Yakser
-			</div>
-	
-			<nav id="bar">
-				<div class="toggle-btn" onclick="openMenu()">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<ul class="main-menu" id="main-menu">
-					<li><a href="#"  class="item active" id="home">Home</a></li>
-					<li><a href="#"  class="item" id="about">About</a></li>
-					<li><a href="#"  class="item" id="portfolio">Portfolio</a></li>
-					<li><a href="#"  class="item" id="contact">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+									 portfolio site, portfolio website, junior developer"
+    />
 
-		<main>
-			<aside>
-				<ul class="social">
-					<li class="inst"><a href="https://www.instagram.com/y4kser" target="_blank"><img src="img/inst-icon.png" alt="inst" class="ab"></a></li>
-					<li class="vk"><a href="https://vk.com/yakser" target="_blank"><img src="img/vk-icon.png" alt="vk"></a></li>
-					<li class="github"><a href="https://github.com/Yakser?tab=repositories" target="_blank">
-						<img src="img/github-icon.png" alt="github"></a></li>
-					
-				</ul>
-			</aside>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="files/favicon.png" type="image/png" />
 
+    <title>Yaksers' website</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          Yakser
+        </div>
 
-			<div class=" block intro">
-				<p class="caption">HELLO!</p>
-				<h2 class="logo header">Sergey Yaksanov</h2>
-				<h3 class="subheader">&lt;web&gt; developer</h3><br>
-				<div class="rotate"><h3 class="subheader subheader-python">& Python</h3></div>
-			</div>
+        <nav id="bar">
+          <div class="toggle-btn" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="main-menu" id="main-menu">
+            <li><a href="#" class="item active" id="home">Home</a></li>
+            <li><a href="#" class="item" id="about">About</a></li>
+            <li><a href="#" class="item" id="portfolio">Portfolio</a></li>
+            <li><a href="#" class="item" id="contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-			<div class="block about">
-				<h2 class="header">About me</h2>
-			
-				<p class="caption">
-					Hello, my name is Sergey Yaksanov.<br>
-					I'm a beginner Web and Python developer, love programming, sport and traveling.
-				</p>
+      <main>
+        <aside>
+          <ul class="social">
+            <li class="inst">
+              <a href="https://www.instagram.com/y4kser" target="_blank"
+                ><img src="img/inst-icon.png" alt="inst" class="ab"
+              /></a>
+            </li>
+            <li class="vk">
+              <a href="https://vk.com/yakser" target="_blank"
+                ><img src="img/vk-icon.png" alt="vk"
+              /></a>
+            </li>
+            <li class="github">
+              <a
+                href="https://github.com/Yakser?tab=repositories"
+                target="_blank"
+              >
+                <img src="img/github-icon.png" alt="github"
+              /></a>
+            </li>
+          </ul>
+        </aside>
 
-			</div>
+        <div class="block intro">
+          <p class="caption">HELLO!</p>
+          <h2 class="logo header">Sergey Yaksanov</h2>
+          <h3 class="subheader">&lt;web&gt; developer</h3>
+          <br />
+          <div class="rotate">
+            <h3 class="subheader subheader-python">& Python</h3>
+          </div>
+        </div>
 
-			<div class="block portfolio">
-				<h2 class="header">Portfolio</h2>
-				<p class="caption">My works</p>
-					<ul class="works-list">
-						<li><a href="https://yakser.github.io/Cuda/" target="_blank" class="works-list-item">Cuda</a></li>
-						<li><a href="img/google-code-in-certificate.jpg" target="_blank" class="works-list-item">Google code-in</a></li>
-					</ul>
-			
-				
-				<p class="caption">&lt;Education & courses&gt;</p>
-					<ul class="works-list courses-list">
-						<li><a href="https://htmlacademy.ru/courses"
-						 target="_blank" class="works-list-item">HTML Academy</a></li>
-						<li><a href="https://yandexlyceum.ru/"
-						 target="_blank" class="works-list-item">Yandex.Lyceum</a></li>
-					</ul>
-			</div>
-			
-			<div class="block contact">
-				<h2 class="header">GET IN TOUCH</h2>
-				<ul class="hor-social">
-					<li class="inst"><a href="https://www.instagram.com/y4kser" target="_blank"><img src="img/inst-icon.png" alt="inst" class="ab"></a></li>
-					<li class="vk"><a href="https://vk.com/yakser" target="_blank"><img src="img/vk-icon.png" alt="vk"></a></li>
-					<li class="github"><a href="https://github.com/Yakser?tab=repositories" target="_blank">
-						<img src="img/github-icon.png" alt="github"></a></li>
-				</ul>
-			</div>
-			<!-- <img class="photo" src="img/bruh.svg" alt="It's me! xD"> -->
-		</main>
-	</div>
-	<script src="script.js"></script>
-</body>
+        <div class="block about">
+          <h2 class="header">About me</h2>
+
+          <p class="caption">
+            Hello, my name is Sergey Yaksanov.<br />
+            I'm a beginner Web and Python developer, love programming, sport and
+            traveling.
+          </p>
+        </div>
+
+        <div class="block portfolio">
+          <h2 class="header">Portfolio</h2>
+          <p class="caption">My works</p>
+          <ul class="works-list">
+            <li>
+              <a
+                href="https://yakser.github.io/Cuda/"
+                target="_blank"
+                class="works-list-item"
+                >Cuda</a
+              >
+            </li>
+            <li>
+              <a
+                href="img/google-code-in-certificate.jpg"
+                target="_blank"
+                class="works-list-item"
+                >Google code-in</a
+              >
+            </li>
+          </ul>
+
+          <p class="caption">&lt;Education & courses&gt;</p>
+          <ul class="works-list courses-list">
+            <li>
+              <a
+                href="https://htmlacademy.ru/courses"
+                target="_blank"
+                class="works-list-item"
+                >HTML Academy</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://yandexlyceum.ru/"
+                target="_blank"
+                class="works-list-item"
+                >Yandex.Lyceum</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="block contact">
+          <h2 class="header">GET IN TOUCH</h2>
+          <ul class="hor-social">
+            <li class="inst">
+              <a href="https://www.instagram.com/y4kser" target="_blank"
+                ><img src="img/inst-icon.png" alt="inst" class="ab"
+              /></a>
+            </li>
+            <li class="vk">
+              <a href="https://vk.com/yakser" target="_blank"
+                ><img src="img/vk-icon.png" alt="vk"
+              /></a>
+            </li>
+            <li class="github">
+              <a
+                href="https://github.com/Yakser?tab=repositories"
+                target="_blank"
+              >
+                <img src="img/github-icon.png" alt="github"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- <img class="photo" src="img/bruh.svg" alt="It's me! xD"> -->
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
