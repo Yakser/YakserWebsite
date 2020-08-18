@@ -875,12 +875,12 @@ aside {
     		transition: all 0.3s ease-in-out;
   }
 
-  #bar.active-bar .hamburger::before {
+  .active-bar .hamburger::before {
     -webkit-transform: translate(8px, 5px) rotate(45deg) scale(0.5, 1);
     	-ms-transform: translate(8px, 5px) rotate(45deg) scale(0.5, 1);
     		transform: translate(8px, 5px) rotate(45deg) scale(0.5, 1);
   }
-  #bar.active-bar .hamburger::after {
+  .active-bar .hamburger::after {
     -webkit-transform: translate(8px, -5px) rotate(-45deg) scale(0.5, 1);
     	-ms-transform: translate(8px, -5px) rotate(-45deg) scale(0.5, 1);
     		transform: translate(8px, -5px) rotate(-45deg) scale(0.5, 1);
