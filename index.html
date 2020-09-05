@@ -1,166 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta
-      name="description"
-      content="This is my little portfolio website. There you can find out
-										 basic information about me and check out my works."
-    />
-    <meta
-      name="keywords"
-      content="Yakser, yakser, y4ks3r, Sergey Yaksanov,
-	 								Яксанов Сергей, portfolio, portfolio web,
-	 								Яксанов, Яксер, 
-									 portfolio site, portfolio website, junior developer"
-    />
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Lato:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="files/favicon.png" type="image/png" />
+	<title>PhotoStudio</title>
+</head>
+<body>
+	
+	<section class="banner" id="sec">
+		<header>
+			<a href="#" class="logo">PhotoStudio</a>
+			<div id="toggle" onclick="toggle()"></div>
+		</header>
+		<div class="content">
+			<div class="content__block ">
 
-    <title>Yaksers' website</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="logo">
-          Yakser
-        </div>
+				<h2>Привет! <br> Я <span>Сергей Рыжих</span></h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequuntur quia nesciunt quod ad odit maxime aliquam voluptatibus rem! Iste praesentium, eaque ipsa. Enim alias, quod veniam, eos amet omnis?</p>
+				<a href="#" id="know-more">Узнать больше</a>
 
-        <nav id="bar">
-          <div class="toggle-btn" onclick="openMenu()">
-            <div class="hamburger"></div>
-          </div>
-          <ul class="main-menu" id="main-menu">
-            <li><a href="#" class="item active" id="home">Home</a></li>
-            <li><a href="#" class="item" id="about">About</a></li>
-            <li><a href="#" class="item" id="portfolio">Portfolio</a></li>
-            <li><a href="#" class="item" id="contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
-        <aside>
-          <ul class="social">
-            <li class="inst">
-              <a href="https://www.instagram.com/y4kser" target="_blank"
-                ><img src="img/inst-icon.png" alt="inst" class="ab"
-              /></a>
-            </li>
-            <li class="vk">
-              <a href="https://vk.com/yakser" target="_blank"
-                ><img src="img/vk-icon.png" alt="vk"
-              /></a>
-            </li>
-            <li class="github">
-              <a
-                href="https://github.com/Yakser?tab=repositories"
-                target="_blank"
-              >
-                <img src="img/github-icon.png" alt="github"
-              /></a>
-            </li>
-          </ul>
-        </aside>
-
-        <div class="block intro">
-          <p class="caption">HELLO!</p>
-          <h2 class="logo header">Sergey Yaksanov</h2>
-          <h3 class="subheader">&lt;web&gt; developer</h3>
-          <br />
-          <div class="rotate">
-            <h3 class="subheader subheader-python">& Python</h3>
-          </div>
-        </div>
-
-        <div class="block about">
-          <h2 class="header">About me</h2>
-
-          <p class="caption">
-            Hello, my name is Sergey Yaksanov.<br />
-            I'm a beginner Web and Python developer, love programming, sport and
-            traveling.
-          </p>
-        </div>
-
-        <div class="block portfolio">
-          <h2 class="header">Portfolio</h2>
-          <p class="caption">My works</p>
-          <ul class="works-list">
-            <li>
-              <a
-                href="https://yakser.github.io/Cuda/"
-                target="_blank"
-                class="works-list-item"
-                >Cuda</a
-              >
-            </li>
-            <li>
-              <a
-                href="img/google-code-in-certificate.jpg"
-                target="_blank"
-                class="works-list-item"
-                >Google code-in</a
-              >
-            </li>
-          </ul>
-
-          <p class="caption">&lt;Education & courses&gt;</p>
-          <ul class="works-list courses-list">
-            <li>
-              <a
-                href="https://htmlacademy.ru/courses"
-                target="_blank"
-                class="works-list-item"
-                >HTML Academy</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://yandexlyceum.ru/"
-                target="_blank"
-                class="works-list-item"
-                >Yandex.Lyceum</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="block contact">
-          <h2 class="header">GET IN TOUCH</h2>
-          <ul class="hor-social">
-            <li class="inst">
-              <a href="https://www.instagram.com/y4kser" target="_blank"
-                ><img src="img/inst-icon.png" alt="inst" class="ab"
-              /></a>
-            </li>
-            <li class="vk">
-              <a href="https://vk.com/yakser" target="_blank"
-                ><img src="img/vk-icon.png" alt="vk"
-              /></a>
-            </li>
-            <li class="github">
-              <a
-                href="https://github.com/Yakser?tab=repositories"
-                target="_blank"
-              >
-                <img src="img/github-icon.png" alt="github"
-              /></a>
-            </li>
-          </ul>
-        </div>
-        <!-- <img class="photo" src="img/bruh.svg" alt="It's me! xD"> -->
-      </main>
-    </div>
-    <script src="script.js"></script>
-  </body>
+			</div>
+			<div class="content__block">
+				<h2>Обо мне</h2>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Libero facere delectus, voluptate cumque facilis dolor fuga dolorum optio, maxime omnis aliquam dolore ad distinctio magnam laudantium eos veniam, perspiciatis, molestiae!</p>
+			</div>
+			<div class="content__block">
+				<h2>Услуги</h2>
+				<div class="services">
+					<div class="services__item">
+						<img src="img/studio-photo.jpg" alt="">
+						<p>Студийная съемка</p>
+					</div>
+					<div class="services__item">
+						<img src="img/kaga.jpg" alt="">
+						<p>Свадебные фото</p>
+					</div>
+					<div class="services__item">
+						<img src="img/andreika-portret.jpg" alt="">
+						<p>Портрет</p>
+					</div>
+				</div>
+			</div>
+			<div class="content__block">
+				<h2>Мои работы</h2>
+			</div>
+			<div class="content__block">
+				<h2>Следите за моими соц. сетями</h2>
+				<ul class="contacts">
+					<li><a href="#"><img src="img/facebook.png" target="blank" alt=""></a></li>
+					<li><a href="https://vk.com/haggi33" target="blank"><img src="img/icon-vk.png" alt=""></a></li>
+					<li><a href="https://www.instagram.com/photosaratov164/">
+						<img src="img/icon-instagram.png" target="blank" alt="">
+					</a></li>
+					<li><a href="tel:123456789">+123456789</a></li>
+				</ul>
+			</div>
+		</div>
+		<ul class="sci">
+			<li><a href="#"><img src="img/facebook.png" target="blank" alt=""></a></li>
+			<li><a href="https://vk.com/haggi33" target="blank"><img src="img/icon-vk.png" alt=""></a></li>
+			<li><a href="https://www.instagram.com/photosaratov164/">
+				<img src="img/icon-instagram.png" target="blank" alt="">
+			</a></li>
+		</ul>
+	</section>
+	<div id="navigation">
+		<ul>
+			<li><a href="#" class="nav__link active-link">Главная</a></li>
+			<li><a href="#" class="nav__link">Обо мне</a></li>
+			<li><a href="#" class="nav__link">Услуги</a></li>
+			<li><a href="#" class="nav__link">Портфолио</a></li>
+			<li><a href="#" class="nav__link">Связь</a></li>
+		</ul>
+	</div>
+	<script src="js/script.js"></script>
+</body>
 </html>
